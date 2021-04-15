@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="home_files/bootstrap.css">
     <link rel="stylesheet" href="home_files/app.css">
 
-    <title>COVID-19 Vaccine | Oxford-AstraZeneca</title>
+    <title>COVID-19 Vaccine | Registration</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -76,44 +76,13 @@
 
                     <div class="row">
                         <br>
-                        <h2 id="content" class="open d-lg-block">Oxford-AstraZeneca Vaccine</h2>
+                        <h2 id="content" class="open d-lg-block">Successfully Submitted!</h2>
                         <br>
                         <br>
                         <br>
 
                     </div>
-                    <div class="cdc-2020-bar container">
-
-                    </div>
-
-                    <div class="syndicate">
-                        <div class="row ">
-                            <div class="col-md-12">
-                                <div class="card border-0 rounded-0 mb-3">
-                                    <div class="card-body bg-primary">
-                                        <div class="row">
-                                            <div class="d-none">
-                                                <div class="text-center">
-                                                    <img src="home_files/clipboard.png" alt="Clipboard with checkmarks" class="card-img-top img-fluid p-0 bg-primary card-img-orig d-none d-md-block rounded-0">
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <h3 class="card-title h3 mb-3 text-left">How It Works</h3>
-                                                <p>1. Scientists take genes for the spike protein on the surface of the coronavirus and puts them into a harmless virus to make a vaccine. This is injected into the patient</p>
-                                                <p>2. The vaccine enters the patient's cells which then start to produce the spike protein. The patient's body's immune system reacts, produces antibodies and activates T-cells to destroy cells wth the spike protein.</p>
-                                                <p>3. If the patient later catches coronavirus, antibodies and T-cells are triggered to fight the virus</p>
-
-                                            </div>
-                                            <div class="pl-md-0 col-md-3 d-none d-md-block">
-                                                <div class="text-center">
-                                                    <img src="home_files/clipboard.png" alt="Clipboard with checkmarks" class="card-img-top img-fluid p-0 bg-primary card-img-orig d-none d-md-block rounded-0">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    
                         <div class="row ">
                             <div class="col-md-12">
                                 <div class="row-fluid">
@@ -132,26 +101,17 @@
                                 </div>
                                 <div class="card border-0 rounded-0 mb-3">
                                     <div class="card-body ">
-                                        <h2 class="card-title h3 mb-3 text-left">Efficacy & Comparison</h2>
-                                        <p>Vaccine efficacy is the percentage reduction in a disease in a group of people who received a vaccination in a clinical trial. It differs from vaccine effectiveness, which measures how well a vaccine works when given to people in the community outside of clinical trials.</p>
-
-                                        <ul>
-                                            <li>Efficacy
-                                                <ul>
-                                                    <li>The AZD1222 vaccine against COVID-19 has an efficacy of 63.09% against symptomatic SARS-CoV-2 infection.</li>
-                                                    <li>Longer dose intervals within the 8 to 12 weeks range are associated with greater vaccine efficacy.</li>
-                                                </ul>
-                                            </li>
-                                            <li>Comparison with the Pfizer-BioNTech Vaccine
-                                                <ul>
-                                                    <li>Large trials showed the Pfizer vaccine was 95% effective, while the figure for the Oxford one was 62%.</li>
-                                                    <li>But directly comparing results is difficult because there are differences in the way the trials were carried out.</li>
-                                                    <li>No-one who received the Oxford vaccine was hospitalised or became seriously ill due to Covid.</li>
-                                                    <li>A recent study found a single dose of the Oxford vaccine offered 76% protection for three months, and this went up to 82% after the second dose.</li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-
+                                        <h2 class="card-title h3 mb-3 text-left">Enter your details</h2>
+                                        <form action="submitted.html">
+                                            <p>First Name: <input type="text" name="first_name"/></p>
+                                            <p>Last Name: <input type="text" name="last_name"/></p>
+                                            <p>Phone Number: <input type="text" name="phone_number"/></p>
+                                            <input type="radio" id="male" name="gender" value="male">
+                                            <label for="male">Male</label>
+                                            <input type="radio" id="female" name="gender" value="female">
+                                            <label for="female">Female</label><br>
+                                            <input type="submit" value="Submit"/>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

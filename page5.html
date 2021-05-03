@@ -56,12 +56,12 @@
                     </li>
 
                     <li class="nav-item" id="menu4">
-                        <a class="nav-link active" href="page4.html">
+                        <a class="nav-link" href="page4.html">
                             Registration</a>
                     </li>
 
                     <li class="nav-item" id="menu4">
-                        <a class="nav-link" href="page5.html">
+                        <a class="nav-link active" href="page5.html">
                             Vaccine Checking						</a>
                     </li>
                 </ul>
@@ -81,7 +81,7 @@
 
                     <div class="row">
                         <br>
-                        <h2 id="content" class="open d-lg-block">Registration</h2>
+                        <h2 id="content" class="open d-lg-block">Vaccine Checking</h2>
                         <br>
                         <br>
                         <br>
@@ -106,16 +106,10 @@
                                 </div>
                                 <div class="card border-0 rounded-0 mb-3">
                                     <div class="card-body ">
-                                        <h2 class="card-title h3 mb-3 text-left">Enter your details</h2>
-                                        <form action="submitted.html">
-                                            <p>First Name: <input type="text" name="first_name"/></p>
-                                            <p>Last Name: <input type="text" name="last_name"/></p>
-                                            <p>Phone Number: <input type="text" name="phone_number"/></p>
-                                            <input type="radio" id="male" name="gender" value="male">
-                                            <label for="male">Male</label>
-                                            <input type="radio" id="female" name="gender" value="female">
-                                            <label for="female">Female</label><br>
-                                            <input type="submit" value="Submit"/>
+                                        <h2 class="card-title h3 mb-3 text-left">Enter Your Details</h2>
+                                        <form action="registercheck.php" method="post">
+                                            <p>NRIC: <input type="text" name="input_nric"/></p>
+                                            <button type="submit">Check</button>
                                         </form>
                                     </div>
                                 </div>

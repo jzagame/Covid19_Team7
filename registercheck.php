@@ -56,12 +56,12 @@
                     </li>
 
                     <li class="nav-item" id="menu4">
-                        <a class="nav-link active" href="page4.html">
+                        <a class="nav-link" href="page4.html">
                             Registration</a>
                     </li>
 
                     <li class="nav-item" id="menu4">
-                        <a class="nav-link" href="page5.html">
+                        <a class="nav-link active" href="page5.html">
                             Vaccine Checking						</a>
                     </li>
                 </ul>
@@ -81,7 +81,7 @@
 
                     <div class="row">
                         <br>
-                        <h2 id="content" class="open d-lg-block">Registration</h2>
+                        <h2 id="content" class="open d-lg-block">Vaccine Checking</h2>
                         <br>
                         <br>
                         <br>
@@ -104,21 +104,22 @@
                                     <div></div>
                                     <div></div>
                                 </div>
-                                <div class="card border-0 rounded-0 mb-3">
-                                    <div class="card-body ">
-                                        <h2 class="card-title h3 mb-3 text-left">Enter your details</h2>
-                                        <form action="submitted.html">
-                                            <p>First Name: <input type="text" name="first_name"/></p>
-                                            <p>Last Name: <input type="text" name="last_name"/></p>
-                                            <p>Phone Number: <input type="text" name="phone_number"/></p>
-                                            <input type="radio" id="male" name="gender" value="male">
-                                            <label for="male">Male</label>
-                                            <input type="radio" id="female" name="gender" value="female">
-                                            <label for="female">Female</label><br>
-                                            <input type="submit" value="Submit"/>
-                                        </form>
-                                    </div>
-                                </div>
+                                <?php
+        
+                                    // echo $_POST['input_nric'];
+                                    
+                                    if (file_exists($_POST['input_nric'] . '.txt')){
+                                        echo '<h3>You are already registered!</h3>';
+                                    }
+                                    else{
+                                        echo '<h3>You have not registered!</h3><br>';
+                                        echo '<a href ="page4.html">Register here</a>';
+                                        echo '<br>';
+                                        echo '<br>';
+                                        echo '<br>';
+                                    }
+
+                                ?>
                             </div>
                         </div>
                         <div class="row ">

@@ -13,6 +13,20 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .form-field {
+            margin-left: 1em;
+        }
+
+        .margin-space {
+            margin-left: 3em;
+        }
+
+        .subtitle {
+            color: gray;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
@@ -96,18 +110,33 @@
                                 </div>
                                 <div class="card border-0 rounded-0 mb-3">
                                     <div class="card-body ">
-                                        <h2 class="card-title h3 mb-3 text-left">Enter your details</h2>
-
+                                        
                                         <!-- Registration Form -->
+                                        <h2 class="card-title h3 mb-3 text-left">Enter your details</h2>
                                         <form action="reg_process.php" method="POST">
-                                            <p>Name: <input type="text" name="input_name" /></p>
-                                            <p>NRIC: <input type="text" name="input_nric" /></p>
-                                            <p>Phone Number: <input type="text" name="phone_number" /></p>
+                                            <table>
+                                                <tr>
+                                                    <td><p>Name:</p></td>
+                                                    <td><input type="text" name="input_name" class="form-field" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p>NRIC:</p></td>
+                                                    <td><input type="text" name="input_nric" class="form-field" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p>Phone Number:</p></td>
+                                                    <td><input type="text" name="phone_number" class="form-field" /></td>
+                                                </tr>
+                                            </table>
+                                            <br />
+                                            <h4>Select your gender</h4>
+                                            <br />
                                             <input type="radio" id="male" name="gender" value="male" />
                                             <label for="male">Male</label>
-                                            <input type="radio" id="female" name="gender" value="female" />
+                                            <input type="radio" id="female" name="gender" value="female" class="margin-space" />
                                             <label for="female">Female</label>
                                             <br /><br />
+                                            <p class="subtitle">Please ensure that the details entered are accurate.</p>
                                             <input type="submit" value="Submit" />
                                         </form>
                                     </div>

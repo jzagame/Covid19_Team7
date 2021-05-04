@@ -35,28 +35,23 @@
                 <ul class="nav navbar-nav nav-justified w-100">
 
                     <li class="nav-item" id="menu_home">
-                        <a class="nav-link active" href="home.html">
-                            Home</a>
+                        <a class="nav-link active" href="home.html">Home</a>
                     </li>
 
                     <li class="nav-item" id="menu1">
-                        <a class="nav-link" href="page1.html">
-                            Pfizer-BioNTech Vaccine</a>
+                        <a class="nav-link" href="page1.html">Pfizer-BioNTech Vaccine</a>
                     </li>
 
                     <li class="nav-item" id="menu2">
-                        <a class="nav-link" href="page2.html">
-                            Oxford-AstraZeneca Vaccine</a>
+                        <a class="nav-link" href="page2.html">Oxford-AstraZeneca Vaccine</a>
                     </li>
 
                     <li class="nav-item" id="menu3">
-                        <a class="nav-link" href="page3.html">
-                            Moderna Vaccine</a>
+                        <a class="nav-link" href="page3.html">Moderna Vaccine</a>
                     </li>
 
                     <li class="nav-item" id="menu4">
-                        <a class="nav-link" href="page4.html">
-                            Registration</a>
+                        <a class="nav-link" href="page4.html">Registration</a>
                     </li>
 
                 </ul>
@@ -102,29 +97,23 @@
                                 <div class="card border-0 rounded-0 mb-3">
                                     <div class="card-body ">
                                         <h2 class="card-title h3 mb-3 text-left">Enter your details</h2>
-                                        <form action="submitted.html">
-                                            <p>First Name: <input type="text" name="first_name"/></p>
-                                            <p>Last Name: <input type="text" name="last_name"/></p>
-                                            <p>Phone Number: <input type="text" name="phone_number"/></p>
-                                            <input type="radio" id="male" name="gender" value="male">
+                                        <form action="reg_process.php" method="POST">
+                                            <p>
+                                                Name: <input type="text" name="input_name" />
+                                            </p>
+                                            <p>
+                                                NRIC: <input type="text" name="input_nric" />
+                                            </p>
+                                            <p>
+                                                Phone Number: <input type="text" name="phone_number" />
+                                            </p>
+                                            <input type="radio" id="male" name="gender" value="male" />
                                             <label for="male">Male</label>
-                                            <input type="radio" id="female" name="gender" value="female">
-                                            <label for="female">Female</label><br>
-                                            <input type="submit" value="Submit"/>
+                                            <input type="radio" id="female" name="gender" value="female" />
+                                            <label for="female">Female</label>
+                                            <br /><br />
+                                            <input type="submit" value="Submit" />
                                         </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row ">
-                            <div class="col-md-12">
-                                <div class="card border-0 rounded-0">
-                                    <div class="card-body bg-quaternary">
-                                        <h2 class="card-title h3 mb-3 text-left">Duration of Protection</h2>
-                                        <p>It is not yet known how long protection lasts with any of the coronavirus vaccines.</p>
-                                        <p>A study found that unvaccinated people who have had Covid, develop protection for at least six months. Vaccines are likely to provide stronger protection than this.</p>
-                                        <p>It may be that people need annual vaccinations, as happens with the flu jab.</p>
-
                                     </div>
                                 </div>
                             </div>

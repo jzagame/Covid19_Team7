@@ -35,7 +35,7 @@
                 <ul class="nav navbar-nav nav-justified w-100">
 
                     <li class="nav-item" id="menu_home">
-                        <a class="nav-link active" href="home.html">Home</a>
+                        <a class="nav-link" href="home.html">Home</a>
                     </li>
 
                     <li class="nav-item" id="menu1">
@@ -51,7 +51,7 @@
                     </li>
 
                     <li class="nav-item" id="menu4">
-                        <a class="nav-link" href="page4.html">Registration</a>
+                        <a class="nav-link active" href="page4.html">Registration</a>
                     </li>
 
                 </ul>
@@ -97,16 +97,12 @@
                                 <div class="card border-0 rounded-0 mb-3">
                                     <div class="card-body ">
                                         <h2 class="card-title h3 mb-3 text-left">Enter your details</h2>
+
+                                        <!-- Registration Form -->
                                         <form action="reg_process.php" method="POST">
-                                            <p>
-                                                Name: <input type="text" name="input_name" />
-                                            </p>
-                                            <p>
-                                                NRIC: <input type="text" name="input_nric" />
-                                            </p>
-                                            <p>
-                                                Phone Number: <input type="text" name="phone_number" />
-                                            </p>
+                                            <p>Name: <input type="text" name="input_name" /></p>
+                                            <p>NRIC: <input type="text" name="input_nric" /></p>
+                                            <p>Phone Number: <input type="text" name="phone_number" /></p>
                                             <input type="radio" id="male" name="gender" value="male" />
                                             <label for="male">Male</label>
                                             <input type="radio" id="female" name="gender" value="female" />

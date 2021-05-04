@@ -26,6 +26,14 @@
             color: gray;
             font-size: 14px;
         }
+
+        body {
+            height: 100vh;
+        }
+
+        .content {
+            margin-bottom: 30px;
+        }
     </style>
 </head>
 
@@ -110,24 +118,25 @@
                                 </div>
                                 <div class="card border-0 rounded-0 mb-3">
                                     <div class="card-body ">
-                                        
-                                        <!-- Registration Form -->
-                                        <h2 class="card-title h3 mb-3 text-left">Enter your details</h2>
-                                        <form action="reg_process.php" method="POST">
-                                            <table>
-                                                <tr>
-                                                    <td><p>Name:</p></td>
-                                                    <td><input type="text" name="input_name" class="form-field" /></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><p>NRIC:</p></td>
-                                                    <td><input type="text" name="input_nric" class="form-field" /></td>
-                                                </tr>
-                                            </table>
-                                            <br />
-                                            <p class="subtitle">Please ensure that the details entered are accurate.</p>
-                                            <button type="submit">Register</button>
-                                        </form>
+                                        <div class="content">
+                                            <!-- Registration Form -->
+                                            <h2 class="card-title h3 mb-3 text-left">Enter your details</h2>
+                                            <form action="reg_process.php" method="POST">
+                                                <table>
+                                                    <tr>
+                                                        <td><p>Name:</p></td>
+                                                        <td><input type="text" name="input_name" class="form-field" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><p>NRIC:</p></td>
+                                                        <td><input type="text" name="input_nric" class="form-field" /></td>
+                                                    </tr>
+                                                </table>
+                                                <br />
+                                                <p class="subtitle">Please ensure that the details entered are accurate.</p>
+                                                <button type="submit">Register</button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

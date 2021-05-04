@@ -13,6 +13,15 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body {
+            height: 100vh;
+        }
+
+        .content {
+            margin-bottom: 130px;
+        }
+    </style>
 </head>
 
 <body>
@@ -98,6 +107,7 @@
                                     <div class="card-body ">
                                         
                                         <!-- Registration Results -->
+                                        <div class="content">
                                         <?php
                                             // Check if the form fields are empty
                                             if (!empty($_POST['input_name']) && !empty($_POST['input_nric'])) {
@@ -118,6 +128,7 @@
                                                 echo '<h3>Please fill in all of the form fields!</h3>';
                                             }
                                         ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

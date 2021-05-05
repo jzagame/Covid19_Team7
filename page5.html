@@ -14,28 +14,6 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <style>
-        .form-field {
-            margin-left: 1em;
-        }
-
-        .margin-space {
-            margin-left: 3em;
-        }
-
-        .subtitle {
-            color: gray;
-            font-size: 14px;
-        }
-
-        body {
-            height: 100vh;
-        }
-
-        .content {
-            margin-bottom: 30px;
-        }
-    </style>
 </head>
 
 <body>
@@ -58,43 +36,32 @@
                 <ul class="nav navbar-nav nav-justified w-100">
 
                     <li class="nav-item" id="menu_home">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ivan_sprint_2
                         <a class="nav-link" href="home.html">
                             Home</a>
-=======
-                        <a class="nav-link" href="home.html">Home</a>
->>>>>>> e3b1872ee6faa3bdac2b37660d4dc4a74ce93b83
                     </li>
 
                     <li class="nav-item" id="menu1">
-                        <a class="nav-link" href="page1.html">Pfizer-BioNTech Vaccine</a>
+                        <a class="nav-link" href="page1.html">
+                            Pfizer-BioNTech Vaccine</a>
                     </li>
 
                     <li class="nav-item" id="menu2">
-                        <a class="nav-link" href="page2.html">Oxford-AstraZeneca Vaccine</a>
+                        <a class="nav-link" href="page2.html">
+                            Oxford-AstraZeneca Vaccine</a>
                     </li>
 
                     <li class="nav-item" id="menu3">
-                        <a class="nav-link" href="page3.html">Moderna Vaccine</a>
+                        <a class="nav-link" href="page3.html">
+                            Moderna Vaccine</a>
                     </li>
 
                     <li class="nav-item" id="menu4">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ivan_sprint_2
-                        <a class="nav-link active" href="page4.html">
+                        <a class="nav-link" href="page4.html">
                             Registration</a>
-=======
-                        <a class="nav-link active" href="page4.html">Registration</a>
->>>>>>> e3b1872ee6faa3bdac2b37660d4dc4a74ce93b83
                     </li>
 
                     <li class="nav-item" id="menu4">
-                        <a class="nav-link" href="page5.html">
+                        <a class="nav-link active" href="page5.html">
                             Vaccine Checking						</a>
                     </li>
                 </ul>
@@ -106,7 +73,7 @@
     <div class="container d-flex flex-wrap body-wrapper bg-white">
 
         <!-- Content -->
-        <main class="col-xl-12 order-xl-2">
+        <main class="col-xl-9 order-xl-2">
 
             <div class="row">
 
@@ -114,7 +81,7 @@
 
                     <div class="row">
                         <br>
-                        <h2 id="content" class="open d-lg-block">Registration</h2>
+                        <h2 id="content" class="open d-lg-block">Vaccine Checking</h2>
                         <br>
                         <br>
                         <br>
@@ -139,25 +106,24 @@
                                 </div>
                                 <div class="card border-0 rounded-0 mb-3">
                                     <div class="card-body ">
-                                        <div class="content">
-                                            <!-- Registration Form -->
-                                            <h2 class="card-title h3 mb-3 text-left">Enter your details</h2>
-                                            <form action="reg_process.php" method="POST">
-                                                <table>
-                                                    <tr>
-                                                        <td><p>Name:</p></td>
-                                                        <td><input type="text" name="input_name" class="form-field" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><p>NRIC:</p></td>
-                                                        <td><input type="text" name="input_nric" class="form-field" /></td>
-                                                    </tr>
-                                                </table>
-                                                <br />
-                                                <p class="subtitle">Please ensure that the details entered are accurate.</p>
-                                                <button type="submit">Register</button>
-                                            </form>
-                                        </div>
+                                        <h2 class="card-title h3 mb-3 text-left">Enter Your Details</h2>
+                                        <form action="registercheck.php" method="post">
+                                            <p>NRIC: <input type="text" name="input_nric"/></p>
+                                            <button type="submit">Check</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-12">
+                                <div class="card border-0 rounded-0">
+                                    <div class="card-body bg-quaternary">
+                                        <h2 class="card-title h3 mb-3 text-left">Duration of Protection</h2>
+                                        <p>It is not yet known how long protection lasts with any of the coronavirus vaccines.</p>
+                                        <p>A study found that unvaccinated people who have had Covid, develop protection for at least six months. Vaccines are likely to provide stronger protection than this.</p>
+                                        <p>It may be that people need annual vaccinations, as happens with the flu jab.</p>
+
                                     </div>
                                 </div>
                             </div>

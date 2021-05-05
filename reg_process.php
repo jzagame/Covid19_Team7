@@ -8,32 +8,18 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="home_files/bootstrap.css">
     <link rel="stylesheet" href="home_files/app.css">
-    <link rel="stylesheet" href="css/style.css">
 
-    <title>COVID-19 Vaccine | Registration</title>
+    <title>MWE | Register</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
-        .form-field {
-            margin-left: 1em;
-        }
-
-        .margin-space {
-            margin-left: 3em;
-        }
-
-        .subtitle {
-            color: gray;
-            font-size: 14px;
-        }
-
         body {
             height: 100vh;
         }
 
         .content {
-            margin-bottom: 30px;
+            margin-bottom: 130px;
         }
     </style>
 </head>
@@ -58,12 +44,7 @@
                 <ul class="nav navbar-nav nav-justified w-100">
 
                     <li class="nav-item" id="menu_home">
-<<<<<<< HEAD
-                        <a class="nav-link" href="home.html">
-                            Home</a>
-=======
                         <a class="nav-link" href="home.html">Home</a>
->>>>>>> e3b1872ee6faa3bdac2b37660d4dc4a74ce93b83
                     </li>
 
                     <li class="nav-item" id="menu1">
@@ -79,12 +60,7 @@
                     </li>
 
                     <li class="nav-item" id="menu4">
-<<<<<<< HEAD
-                        <a class="nav-link active" href="page4.html">
-                            Registration</a>
-=======
                         <a class="nav-link active" href="page4.html">Registration</a>
->>>>>>> e3b1872ee6faa3bdac2b37660d4dc4a74ce93b83
                     </li>
 
                 </ul>
@@ -96,7 +72,7 @@
     <div class="container d-flex flex-wrap body-wrapper bg-white">
 
         <!-- Content -->
-        <main class="col-xl-12 order-xl-2">
+        <main class="col-xl-9 order-xl-2">
 
             <div class="row">
 
@@ -104,7 +80,7 @@
 
                     <div class="row">
                         <br>
-                        <h2 id="content" class="open d-lg-block">Registration</h2>
+                        <h2 id="content" class="open d-lg-block">Registration Results</h2>
                         <br>
                         <br>
                         <br>
@@ -129,24 +105,29 @@
                                 </div>
                                 <div class="card border-0 rounded-0 mb-3">
                                     <div class="card-body ">
+                                        
+                                        <!-- Registration Results -->
                                         <div class="content">
-                                            <!-- Registration Form -->
-                                            <h2 class="card-title h3 mb-3 text-left">Enter your details</h2>
-                                            <form action="reg_process.php" method="POST">
-                                                <table>
-                                                    <tr>
-                                                        <td><p>Name:</p></td>
-                                                        <td><input type="text" name="input_name" class="form-field" /></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><p>NRIC:</p></td>
-                                                        <td><input type="text" name="input_nric" class="form-field" /></td>
-                                                    </tr>
-                                                </table>
-                                                <br />
-                                                <p class="subtitle">Please ensure that the details entered are accurate.</p>
-                                                <button type="submit">Register</button>
-                                            </form>
+                                        <?php
+                                            // Check if the form fields are empty
+                                            if (!empty($_POST['input_name']) && !empty($_POST['input_nric'])) {
+                                                // echo $_POST['input_name'];
+                                                // echo '<br>';
+                                                // echo $_POST['input_nric'];
+                                                
+                                                if (file_exists($_POST['input_nric'] . '.txt')){     //Check for filename with given nric
+                                                    echo '<h3>You are already registered!</h3>';
+                                                }
+                                                else {   //filename not found, write to file
+                                                        $content_to_write = "Name: " . $_POST['input_name'] . "\n";
+                                                        $content_to_write .= "NRIC: " . $_POST['input_nric'] . "\n";
+                                                        file_put_contents($_POST['input_nric'] . '.txt', $content_to_write);
+                                                        echo '<h3>Registration is successful!</h3>';
+                                                }
+                                            } else {
+                                                echo '<h3>Please fill in all of the form fields!</h3>';
+                                            }
+                                        ?>
                                         </div>
                                     </div>
                                 </div>

@@ -8,18 +8,16 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="home_files/bootstrap.css">
     <link rel="stylesheet" href="home_files/app.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>MWE | Register</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
-        body {
-            height: 100vh;
-        }
 
         .content {
-            margin-bottom: 130px;
+            margin-bottom: 100px;
         }
     </style>
 </head>
@@ -44,23 +42,33 @@
                 <ul class="nav navbar-nav nav-justified w-100">
 
                     <li class="nav-item" id="menu_home">
-                        <a class="nav-link" href="home.html">Home</a>
+                        <a class="nav-link" href="home.html">
+                            Home						</a>
                     </li>
 
                     <li class="nav-item" id="menu1">
-                        <a class="nav-link" href="page1.html">Pfizer-BioNTech Vaccine</a>
+                        <a class="nav-link" href="page1.html">
+                            Pfizer-BioNTech	Vaccine					</a>
                     </li>
 
                     <li class="nav-item" id="menu2">
-                        <a class="nav-link" href="page2.html">Oxford-AstraZeneca Vaccine</a>
+                        <a class="nav-link" href="page2.html">
+                            Oxford-AstraZeneca Vaccine				</a>
                     </li>
 
                     <li class="nav-item" id="menu3">
-                        <a class="nav-link" href="page3.html">Moderna Vaccine</a>
+                        <a class="nav-link" href="page3.html">
+                            Moderna	Vaccine					</a>
                     </li>
 
                     <li class="nav-item" id="menu4">
-                        <a class="nav-link active" href="page4.html">Registration</a>
+                        <a class="nav-link active" href="page4.html">
+                            Registration					</a>
+                    </li>
+
+                    <li class="nav-item" id="menu4">
+                        <a class="nav-link" href="page5.html">
+                            Vaccine Checking						</a>
                     </li>
 
                 </ul>
@@ -127,6 +135,8 @@
                                             } else {
                                                 echo '<h3>Please fill in all of the form fields!</h3>';
                                             }
+
+                                            echo '<br /><br /><p><a href="page4.html">Return</a></p>';
                                         ?>
                                         </div>
                                     </div>

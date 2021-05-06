@@ -13,7 +13,7 @@
     <title>MWE | Register</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <style>
 
         .content {
@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <div class="container-fluid site-title">
         <!-- <div class=""> -->
@@ -41,7 +42,7 @@
 
                 <ul class="nav navbar-nav nav-justified w-100">
 
-                    <li class="nav-item" id="menu_home">
+                    <li class="nav-item" id="menu-home">
                         <a class="nav-link" href="home.html">
                             Home						</a>
                     </li>
@@ -116,28 +117,30 @@
                                         
                                         <!-- Registration Results -->
                                         <div class="content">
-                                        <?php
-                                            // Check if the form fields are empty
-                                            if (!empty($_POST['input_name']) && !empty($_POST['input_nric'])) {
-                                                // echo $_POST['input_name'];
-                                                // echo '<br>';
-                                                // echo $_POST['input_nric'];
-                                                
-                                                if (file_exists($_POST['input_nric'] . '.txt')){     //Check for filename with given nric
-                                                    echo '<h3>You are already registered!</h3>';
-                                                }
-                                                else {   //filename not found, write to file
-                                                        $content_to_write = "Name: " . $_POST['input_name'] . "\n";
-                                                        $content_to_write .= "NRIC: " . $_POST['input_nric'] . "\n";
-                                                        file_put_contents($_POST['input_nric'] . '.txt', $content_to_write);
-                                                        echo '<h3>Registration is successful!</h3>';
-                                                }
-                                            } else {
-                                                echo '<h3>Please fill in all of the form fields!</h3>';
-                                            }
 
-                                            echo '<br /><br /><p><a href="page4.html">Return</a></p>';
+                                        <?php
+                                        // Check if the form fields are empty
+                                        if (!empty($_POST['input_name']) && !empty($_POST['input_nric'])) {
+                                            // echo $_POST['input_name'];
+                                            // echo '<br>';
+                                            // echo $_POST['input_nric'];
+                                            
+                                            if (file_exists($_POST['input_nric'] . '.txt')){     //Check for filename with given nric
+                                                echo '<h3>You are already registered!</h3>';
+                                            }
+                                            else {   //filename not found, write to file
+                                                    $content_to_write = "Name: " . $_POST['input_name'] . "\n";
+                                                    $content_to_write .= "NRIC: " . $_POST['input_nric'] . "\n";
+                                                    file_put_contents($_POST['input_nric'] . '.txt', $content_to_write);
+                                                    echo '<h3>Registration is successful!</h3>';
+                                            }
+                                        } else {
+                                            echo '<h3>Please fill in all of the form fields!</h3>';
+                                        }
+
+                                        echo '<br /><br /><p><a href="page4.html">Return</a></p>';
                                         ?>
+
                                         </div>
                                     </div>
                                 </div>
@@ -159,7 +162,7 @@
         <div class="container">
 
             <div class="card-body bg-quaternary">
-
+                
                 <h5>Disclaimer</h5>
                 <p style="font-size:14px;">This website is created mainly for educational and non-commercial use only. It is a partial fulfillment for completion of unit SWE20001 - Development Project 1 offered in Swinburne University of Technology, Sarawak Campus. The web-master
                     and author(s) do not represent the business entity. The content of the pages of this website might be out-dated or inaccurate, thus, the author(s) and web-master does not take any responsibility for incorrect information disseminated

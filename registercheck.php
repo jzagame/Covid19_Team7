@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="home_files/app.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>COVID-19 Vaccine | Registration</title>
+    <title>COVID-19 Vaccine | Vaccine Checking</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

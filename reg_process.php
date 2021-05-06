@@ -43,33 +43,27 @@
                 <ul class="nav navbar-nav nav-justified w-100">
 
                     <li class="nav-item" id="menu-home">
-                        <a class="nav-link" href="home.html">
-                            Home						</a>
+                        <a class="nav-link" href="home.html">Home						</a>
                     </li>
 
                     <li class="nav-item" id="menu1">
-                        <a class="nav-link" href="page1.html">
-                            Pfizer-BioNTech	Vaccine					</a>
+                        <a class="nav-link" href="page1.html">Pfizer-BioNTech	Vaccine					</a>
                     </li>
 
                     <li class="nav-item" id="menu2">
-                        <a class="nav-link" href="page2.html">
-                            Oxford-AstraZeneca Vaccine				</a>
+                        <a class="nav-link" href="page2.html">Oxford-AstraZeneca Vaccine				</a>
                     </li>
 
                     <li class="nav-item" id="menu3">
-                        <a class="nav-link" href="page3.html">
-                            Moderna	Vaccine					</a>
+                        <a class="nav-link" href="page3.html">Moderna	Vaccine					</a>
                     </li>
 
                     <li class="nav-item" id="menu4">
-                        <a class="nav-link active" href="page4.html">
-                            Registration					</a>
+                        <a class="nav-link active" href="page4.html">Registration					</a>
                     </li>
 
                     <li class="nav-item" id="menu4">
-                        <a class="nav-link" href="page5.html">
-                            Vaccine Checking						</a>
+                        <a class="nav-link" href="page5.html">Vaccine Checking						</a>
                     </li>
 
                 </ul>
@@ -124,15 +118,14 @@
                                             // echo $_POST['input_name'];
                                             // echo '<br>';
                                             // echo $_POST['input_nric'];
-                                            
-                                            if (file_exists($_POST['input_nric'] . '.txt')){     //Check for filename with given nric
+                                            if (file_exists($_POST['input_nric'] . '.txt')) {     //Check for filename with given nric
                                                 echo '<h3>You are already registered!</h3>';
                                             }
-                                            else {   //filename not found, write to file
-                                                    $content_to_write = "Name: " . $_POST['input_name'] . "\n";
-                                                    $content_to_write .= "NRIC: " . $_POST['input_nric'] . "\n";
-                                                    file_put_contents($_POST['input_nric'] . '.txt', $content_to_write);
-                                                    echo '<h3>Registration is successful!</h3>';
+                                            else {  //filename not found, write to file
+                                                $content_to_write = "Name: " . $_POST['input_name'] . "\n";
+                                                $content_to_write .= "NRIC: " . $_POST['input_nric'] . "\n";
+                                                file_put_contents($_POST['input_nric'] . '.txt', $content_to_write);
+                                                echo '<h3>Registration is successful!</h3>';
                                             }
                                         } else {
                                             echo '<h3>Please fill in all of the form fields!</h3>';

@@ -7,7 +7,7 @@ $("#pre").click(function() {
 });
 
 function pre() {
-    $("#pre_symp_content").html("To prevent infection and to slow trasmission of COVID-19, do the following: <br>" +
+    $("#pre-symp-content").html("To prevent infection and to slow trasmission of COVID-19, do the following: <br>" +
         "<ol>" +
         "<li>Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.</li>" +
         "<li>Maintain at least 1 metre distance between you and people coughing or sneezing.</li>" +
@@ -20,7 +20,7 @@ function pre() {
 }
 
 $("#symp").click(function() {
-    $("#pre_symp_content").html("COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.<br>" +
+    $("#pre-symp-content").html("COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.<br>" +
         "Most Common Symptons : <br> " +
         "<ol>" +
         "<li>Fever</li>" +
